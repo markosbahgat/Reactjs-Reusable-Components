@@ -1,0 +1,91 @@
+.container{
+    height: 350px;
+    width: 430px;
+}
+.container .wrapper{
+    position: relative;
+    height: 300px;
+    width: 100%;
+    border: 2px dashed #c2cdda;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+}
+.wrapper .img_container{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .img_container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.wrapper .icon {
+    font-size: 100px;
+    color: red;
+}
+.wrapper .text {
+    font-size: 20px;
+    color: red;
+    font-weight: 600;
+}
+
+#cancel_btn{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: royalblue;
+
+}
+
+.wrapper .file_name{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    color: #fff;
+    padding: 8px 0px;
+    font-size: 18px;
+    background: linear-gradient(135deg , red, blue);
+    display: none;
+
+}
+
+
+.container #custom_btn{
+    margin-top: 30px;
+    width: 100%;
+    height: 50px;
+    display: block;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 600;
+    background: linear-gradient(135deg, red, blue);
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}

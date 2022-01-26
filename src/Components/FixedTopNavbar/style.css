@@ -1,0 +1,120 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.conainer{
+    display: block;
+    position: relative;
+    margin-top: 100px;
+}
+nav{
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100px;
+    padding: 0 5%;
+    background-color: cyan;
+    align-items: center;
+}
+
+nav .navbar_logo{
+    float: left;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: black;
+}
+nav .links{
+    float: right;
+    padding: 0;
+    margin: 0;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .links li {
+    list-style: none;
+}
+
+nav .links a{
+    display: block;
+    padding: 1em;
+    background: transparent;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+
+
+nav .burger_menu{
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    nav .navbar_logo{
+        float: none;
+        width: auto;
+        justify-content: center;
+    }
+    nav .links{
+        float: none;
+        position: fixed;
+        z-index: 9;
+        background-color: rgba(0, 0, 0, 0.8);
+        left: 0;
+        right: 0;
+        top: 100px;
+        bottom: 100%;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        color: red;
+        
+}
+    nav .links a{
+        font-size: 20px;
+
+    }
+    nav .burger_menu{
+        display: block;
+
+    }
+    .links :nth-child(1) {
+        order: 1;
+    }
+    .links :nth-child(2) {
+        order: 1;
+    }
+    .links :nth-child(3) {
+        order: 1;
+    }
+    .links :nth-child(4) {
+        order: 1;
+    }
+    .links :nth-child(5) {
+        order: 1;
+    }
+}

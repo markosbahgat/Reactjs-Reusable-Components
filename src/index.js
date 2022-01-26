@@ -1,17 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import MultiSelectBox from './Components/MultiSelectDropdown/MultiSelectBox'
+import UploadAvatar from './Components/UploadAvatarPicture/UploadAvatarPicture';
+import UploadMultiPic from './Components/UploadMultiPicture/UploadMultiPicture';
+import ResponsiveTopNavbar from './Components/FixedTopNavbar/TopNavbar';
+import StickyTopNavbar from './Components/StickyTopNavbar/StickyTopNavbar';
+import DraggableSideBar from './Components/DraggableSideBar/DraggableSideBar';
+import GetUserLocation from './Components/GetUserLocationFromBrowser/GetUserLocation';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <div hidden>
+          <MultiSelectBox/>
+          <UploadAvatar/>
+          <UploadMultiPic/>
+          <ResponsiveTopNavbar/>
+          <StickyTopNavbar/>
+          <DraggableSideBar/>
+          <GetUserLocation/>
+      </div>
   </React.StrictMode>,
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
