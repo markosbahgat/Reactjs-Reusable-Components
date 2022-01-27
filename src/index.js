@@ -8,6 +8,7 @@ import ResponsiveTopNavbar from './Components/FixedTopNavbar/TopNavbar';
 import StickyTopNavbar from './Components/StickyTopNavbar/StickyTopNavbar';
 import DraggableSideBar from './Components/DraggableSideBar/DraggableSideBar';
 import GetUserLocation from './Components/GetUserLocationFromBrowser/GetUserLocation';
+import SearchBar from './Components/ExpandableSearchBar/SearchBar';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -20,6 +21,7 @@ ReactDOM.render(
           <DraggableSideBar/>
           <GetUserLocation/>
       </div>
+          <SearchBar/>
   </React.StrictMode>,
   document.getElementById('root')
 );
