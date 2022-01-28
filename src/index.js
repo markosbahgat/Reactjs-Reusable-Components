@@ -9,6 +9,7 @@ import StickyTopNavbar from './Components/StickyTopNavbar/StickyTopNavbar';
 import DraggableSideBar from './Components/DraggableSideBar/DraggableSideBar';
 import GetUserLocation from './Components/GetUserLocationFromBrowser/GetUserLocation';
 import SearchBar from './Components/ExpandableSearchBar/SearchBar';
+import ProductCard from './Components/ResponsiveProductCard/ResponsiveProductCard';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -20,8 +21,9 @@ ReactDOM.render(
           <StickyTopNavbar/>
           <DraggableSideBar/>
           <GetUserLocation/>
-      </div>
           <SearchBar/>
+      </div>
+      <ProductCard/>
   </React.StrictMode>,
   document.getElementById('root')
 );
