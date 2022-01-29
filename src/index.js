@@ -10,6 +10,7 @@ import DraggableSideBar from './Components/DraggableSideBar/DraggableSideBar';
 import GetUserLocation from './Components/GetUserLocationFromBrowser/GetUserLocation';
 import SearchBar from './Components/ExpandableSearchBar/SearchBar';
 import ProductCard from './Components/ResponsiveProductCard/ResponsiveProductCard';
+import Pagination from './Components/Pagination/pagination';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -22,8 +23,9 @@ ReactDOM.render(
           <DraggableSideBar/>
           <GetUserLocation/>
           <SearchBar/>
+          <ProductCard/>
       </div>
-      <ProductCard/>
+      <Pagination/>
   </React.StrictMode>,
   document.getElementById('root')
 );
