@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MultiStepForm from './Components/MultiStepForm/MultiStepForm';
-import './index.css';
 /*
+import MultiStepForm from './Components/MultiStepForm/MultiStepForm';
 import MultiSelectBox from './Components/MultiSelectDropdown/MultiSelectBox'
 import UploadAvatar from './Components/UploadAvatarPicture/UploadAvatarPicture';
 import UploadMultiPic from './Components/UploadMultiPicture/UploadMultiPicture';
@@ -16,6 +15,7 @@ import Pagination from './Components/Pagination/pagination';
 import SlidingCard from './Components/ResponsiveSliderCard/SlidingCard';
 import PersonCard from './Components/ResponsivePersonCard/PersonCard';
 */
+import ResponsiveBoxModel from './Components/ResponsiveBoxModel/ResponsiveBoxModel';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -32,8 +32,11 @@ ReactDOM.render(
           <Pagination/>
           <SlidingCard/>
           <PersonCard/>
+          <MultiStepForm/>
+          <FixedBottomFooter/>
+          <BoxModel/>
       </div>*/}
-      <MultiStepForm/>
+    <ResponsiveBoxModel/>
   </React.StrictMode>,
   document.getElementById('root')
 );
