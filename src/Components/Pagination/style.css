@@ -43,16 +43,12 @@ body{
   border-radius: 50%;
 }
 .pagination ul li.numb.first{
-  margin: 0px 3px 0 -5px;
+  margin: 0px 3px 0 3px;
 }
 .pagination ul li.numb.last{
-  margin: 0px -5px 0 3px;
+  margin: 0px 3px 0 3px;
 }
-.pagination ul li.numb span{
-  position: relative;
-  top: 2px;
-  left: -0.5px;
-}
+
 .pagination ul li.dots{
   font-size: 22px;
   cursor: default;
