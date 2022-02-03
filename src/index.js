@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import ResponsiveCallender from './Components/ResponsiveDarkModeCallender/Callender';
 /*
+import Testing from './Components/testing/test';
 import MultiStepForm from './Components/MultiStepForm/MultiStepForm';
 import MultiSelectBox from './Components/MultiSelectDropdown/MultiSelectBox'
 import UploadAvatar from './Components/UploadAvatarPicture/UploadAvatarPicture';
@@ -14,8 +16,8 @@ import ProductCard from './Components/ResponsiveProductCard/ResponsiveProductCar
 import Pagination from './Components/Pagination/pagination';
 import SlidingCard from './Components/ResponsiveSliderCard/SlidingCard';
 import PersonCard from './Components/ResponsivePersonCard/PersonCard';
-*/
 import ResponsiveBoxModel from './Components/ResponsiveBoxModel/ResponsiveBoxModel';
+*/
 
 ReactDOM.render(
   <React.StrictMode>
@@ -35,8 +37,10 @@ ReactDOM.render(
           <MultiStepForm/>
           <FixedBottomFooter/>
           <BoxModel/>
-      </div>*/}
-    <ResponsiveBoxModel/>
+          <ResponsiveBoxModel/>
+      <Testing/>
+        </div>*/}
+        <ResponsiveCallender/>
   </React.StrictMode>,
   document.getElementById('root')
 );
