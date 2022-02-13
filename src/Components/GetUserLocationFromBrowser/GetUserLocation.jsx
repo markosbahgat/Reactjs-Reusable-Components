@@ -10,6 +10,7 @@ const GetUserLocation = () => {
               lng: position.coords.longitude
           }
           setCenter(coords);
+          
       };
       const geoError = (error) => {
         switch(error.code) {

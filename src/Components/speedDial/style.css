@@ -1,0 +1,90 @@
+@keyframes pop-in {
+    0% {
+        transform: scale(0);
+   }
+    100% {
+        transform: scale(1);
+   }
+}
+@keyframes pop-out {
+    0% {
+        transform: scale(1);
+   }
+    100% {
+        transform: scale(0);
+   }
+}
+.speed-dial {
+    text-align: center;
+    display: inline-block;
+}
+.speed-dial a, .speed-dial a:hover, .speed-dial a:active, .speed-dial a:visited, .speed-dial a:focus {
+    color: #fafafa;
+    display: inline-block;
+    text-decoration: none;
+}
+.speed-dial .toggle {
+    display: inline-block;
+    border-radius: 50%;
+    padding:15px;
+    font-size: 22px;
+    margin: 8px 0;
+    cursor: pointer;
+}
+.speed-dial:hover .dials a {
+    animation: pop-in 0.3s ease both;
+}
+.speed-dial .dials {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.speed-dial .dials a {
+    display: inline-block;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 16px;
+    margin: 8px 0;
+    animation: pop-out 0.3s ease both;
+    -webkit-animation: pop-out 0.3s ease both;
+}
+.speed-dial .dials a.pop-in {
+    animation: pop-in 0.3s ease both;
+}
+.speed-dial .dials li:nth-child(0) a {
+    animation-delay: 0s;
+}
+.speed-dial .dials li:nth-child(1) a {
+    animation-delay: 0.1s;
+}
+.speed-dial .dials li:nth-child(2) a {
+    animation-delay: 0.2s;
+}
+.speed-dial .dials li:nth-child(3) a {
+    animation-delay: 0.3s;
+}
+.speed-dial .dials li:nth-child(4) a {
+    animation-delay: 0.4s;
+}
+.speed-dial .dials li:nth-child(5) a {
+    animation-delay: 0.5s;
+}
+.speed-dial .dials li:nth-child(6) a {
+    animation-delay: 0.6s;
+}
+.bg-share {
+    background-color: #15b897;
+}
+.bg-twitter {
+    background-color: #2daae2;
+}
+.bg-facebook {
+    background-color: #3c5b9b;
+}
+.bg-google-plus {
+    background-color: #f73e29;
+}
+body {
+    background-color: #eee;
+    padding: 0 50px;
+}
