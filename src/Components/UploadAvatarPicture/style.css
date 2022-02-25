@@ -1,6 +1,7 @@
 .container{
     height: 350px;
     width: 430px;
+    margin: auto;
 }
 .container .wrapper{
     position: relative;
@@ -25,6 +26,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: auto;
 }
 
 .wrapper .img_container img{
@@ -37,11 +39,15 @@
 .wrapper .icon {
     font-size: 100px;
     color: red;
+    margin-left: 20%;
 }
+
+
 .wrapper .text {
     font-size: 20px;
     color: red;
     font-weight: 600;
+    margin: auto;
 }
 
 #cancel_btn{

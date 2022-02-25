@@ -9,7 +9,7 @@ const FixedBottomFooter = () => {
       <div className="top">
         <div className="logo-details">
           <i className="fab fa-slack"></i>
-          <span className="logo_name">CodingLab</span>
+          <span className="logo_name">MarkosBahgat</span>
         </div>
         <div className="media-icons">
           <a href="#"><i className="fab fa-facebook-f"></i></a>
@@ -57,7 +57,7 @@ const FixedBottomFooter = () => {
     </div>
     <div className="bottom-details">
       <div className="bottom_text">
-        <span className="copyright_text">Copyright © 2021 <a href="#">CodingLab.</a>All rights reserved</span>
+        <span className="copyright_text">Copyright © 2021 <a href="#">MarkosBaghat.</a>All rights reserved</span>
         <span className="policy_terms">
           <a href="#">Privacy policy</a>
           <a href="#">Terms & condition</a>

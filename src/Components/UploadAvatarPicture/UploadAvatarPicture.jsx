@@ -24,7 +24,7 @@ const UploadAvatar = () => {
             <div className='container'>
                 <div className='wrapper'>
                     <div className='img_container'>
-                        <img src={imgUrl} alt=''/>
+                        <img src={imgUrl}/>
                     </div>
                     <div className='content'>
                         <div className='icon'><i className="fas fa-cloud-upload-alt"></i></div>

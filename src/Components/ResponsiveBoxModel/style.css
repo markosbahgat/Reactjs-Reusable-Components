@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
-/*=============== VARIABLES CSS ===============*/
 :root {
-  /*========== Colors ==========*/
   --hue: 240;
   --first-color: hsl(var(--hue), 16%, 18%);
   --first-color-alt: hsl(var(--hue), 16%, 12%);
@@ -11,12 +9,10 @@
   --body-color: hsl(var(--hue), 100%, 99%);
   --container-color: #FFF;
 
-  /*========== Font and typography ==========*/
   --body-font: 'Poppins', sans-serif;
   --big-font-size: 1.5rem;
   --normal-font-size: .938rem;
 
-  /*========== z index ==========*/
   --z-modal: 1000;
 }
 
@@ -26,8 +22,6 @@
     --normal-font-size: 1rem;
   }
 }
-
-/*=============== BASE ===============*/
 *{
   box-sizing: border-box;
   padding: 0;
@@ -56,8 +50,6 @@ img{
   max-width: 100%;
   height: auto;
 }
-
-/*=============== MODAL ===============*/
 .container{
   margin-left: 1rem;
   margin-right: 1rem;
@@ -96,9 +88,6 @@ img{
   z-index: var(--z-modal);
   visibility: hidden;
   opacity: 0;
-
-  /*=== Effect 3 ===*/
-  /* perspective: 1000px; */
 }
 
 .modal__content{
@@ -109,15 +98,7 @@ img{
   border-radius: 1rem 1rem 0 0;
   transition: all .3s;
 
-  /*=== Effect 1 ===*/
   transform: translateY(10%);
-
-  /*=== Effect 2 ===*/
-  /* transform: scale(.5) translateY(10%); */
-
-  /*=== Effect 3 ===*/
-  /* transform: rotateX(65deg) scale(.75) translateY(10%);
-  transform-origin: 50% 100%; */
 }
 
 .modal__img{
@@ -159,25 +140,14 @@ img{
   font-weight: 500;
 }
 
-/* Show modal */
 .show-modal{
   visibility: visible;
   opacity: 1;
 }
 
 .show-modal .modal__content{
-  /*=== Effect 1 ===*/
   transform: translateY(0);
-
-  /*=== Effect 2 ===*/
-  /* transform: scale(1) translateY(0); */
-
-  /*=== Effect 3 ===*/
-  /* transform: rotateX(0) scale(1) translateY(0); */
 }
-
-/*=============== BREAKPOINTS ===============*/
-/* For small devices */
 @media screen and (min-width: 576px){
   .modal__content{
     margin: auto;
